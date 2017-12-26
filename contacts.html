@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<title>Сайт визитка</title>
+		   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link href='http://fonts.googleapis.com/css?family=Concert+One' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="styles/style.css" />
+		<script type="text/javascript">
+$(document).ready(function(){
+$("ul").hide();
+$("ul li:odd").css("background-color", "#efefef");
+$("h3 span").click(function(){
+$(this).parent().next().slideToggle();
+});
+});
+</script>
+
+	</head>
+	<body>
+			<div id="wrapper">
+				<div id="header">
+                  <div id="banner"></div>
+				<div id="menu">
+
+					<ul>
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="works.html">Прайс</a></li>
+						<li class="activeMenu"><a href="contacts.html">Контакты</a></li>
+					</ul>
+				</div>
+				</div>
+				<div id="content">
+            <div id="block_map">
+                <div id="map">
+                </div>
+                <div id="txtcontact">
+				Большая Садовая ул. дом 84 </br>
+				50-летия Ростсельмаша 6б </br>
+				Тел.:	  +7 (900) 000-00-00
+				<hr>
+				<span class='email'>E-mail:<a id="email" href="mailto:Pochta@mail">Pochta@mail.ru</a></span> </br></br>
+					Время работы компьютерного сервиса с 8:30 до 22:00.</br>
+					Вызов специалиста на домс 9:00 до 20:00.</br>
+					Ежедневно, без перерыва и выходных</br></br>
+				<hr>
+
+
+Вы можете сделать заявку, позвонив по контактному номеру телефону, либо оставив заявку на почте.</br>
+"Компьютерный Помощь" - компьютерный сервис, осуществляющий компьютерную поддержку в Ростове-на-Дону с 2006 года. 
+Мы всегда рады помочь каждому жителю нашего города.  
+                    </div>
+            </div>
+
+				</div>
+    
+    <div id="footer">
+	
+	
+	 &copy;2017 All Rights Reserved &nbsp;&nbsp;&nbsp; <span class='email'>E-mail:<a id="email" href="mailto:Pochta@mail">Pochta@mail.ru</a></span>
+    </div>
+			</div>
+			
+	</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		
+		   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Сайт визитка</title>
+		<link href='http://fonts.googleapis.com/css?family=Concert+One' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="styles/style.css" />
+		<script  type="text/javascript" src="js/jquery.js"></script>
+
+
+
+<script>
+$(document).ready(function() {
+    function close_accordion_section() {
+        $('.accordion .accordion-section-title').removeClass('active');
+        $('.accordion .accordion-section-content').slideUp(300).removeClass('open');
+    }
+ 
+    $('.accordion-section-title').click(function(e) {
+        // Grab current anchor value
+        var currentAttrValue = $(this).attr('href');
+ 
+        if($(e.target).is('.active')) {
+            close_accordion_section();
+        }else {
+            close_accordion_section();
+ 
+            // Add active class to section title
+            $(this).addClass('active');
+            // Open up the hidden content panel
+            $('.accordion ' + currentAttrValue).slideDown(300).addClass('open'); 
+        }
+ 
+        e.preventDefault();
+    });
+});
+
+</script>
+
+<style type="text/css">
+
+</style>
+
+	</head>
+
+
+	<body>
+			<div id="wrapper">
+				<div id="header">
+                  <div id="banner"></div>
+				<div id="menu">
+
+					<ul>
+						<li><a href="index.html">Главная</a></li>
+						<li class="activeMenu"><a href="works.html">Прайс</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+					</ul>
+				</div>
+				</div>
+				<div id="content">
+
+
+<div class="accordion">
+    <div class="accordion-section">      
+        <a class="accordion-section-title" href="#accordion-1">
+		<div class="price">от 450 руб</div>
+		Установка Windows
+		</a>
+		<div id="accordion-1" class="accordion-section-content">
+            <p>
+				Установка и настройка </br>
+				ОС WIN XP, VISTA, WIN7, WIN8, WIN 10</br>
+				Win Server 2008-16 </br>
+				Linux систем </br>
+			</p>
+		</div>
+    </div>
+	<div class="accordion-section">
+        <a class="accordion-section-title" href="#accordion-2">
+		<div class="price">от 220 руб</div>
+		Ремонт ноутбуков, ПК на дому
+		</a>
+        <div id="accordion-2" class="accordion-section-content">
+            <p>
+				Замена запчастей, переустановка программ
+			
+			</p>
+        </div>
+	</div>
+
+	<div class="accordion-section">
+        <a class="accordion-section-title" href="#accordion-3">
+		<div class="price">от 100 руб</div>
+		Настройка интернета, ТВ
+		</a>
+        <div id="accordion-3" class="accordion-section-content">
+            <p>
+				Настройка wi-fi </br>
+				роутеров, сетевой </br>
+				безопасности </br>
+			</p>
+        </div>
+    </div>
+	<div class="accordion-section">
+        <a class="accordion-section-title" href="#accordion-4">
+		<div class="price">от 350 руб</div>
+		Переговоры с провайдером
+		</a>
+        <div id="accordion-4" class="accordion-section-content">
+            <p>
+				Подбор оптимального тарифа </br>
+				Определение реальной причины отсутствия интернета </br>
+				
+			</p>
+        </div>
+    </div>
+		<div class="accordion-section">
+        <a class="accordion-section-title" href="#accordion-5">
+		<div class="price">от 150 руб</div>
+		Установка программ + консультации
+		</a>
+        <div id="accordion-5" class="accordion-section-content">
+            <p>
+				Установка программ,	драйверов, антивирусы </br>
+				Чичстка, оптимизация и тонкая настройка систем </br>
+			</p>
+        </div>
+    </div>
+		<div class="accordion-section">
+        <a class="accordion-section-title" href="#accordion-6">
+		<div class="price">от 350 руб</div>
+		Удаление вирусов
+		</a>
+        <div id="accordion-6" class="accordion-section-content">
+            <p>
+				Удаление вирусов</br>
+				установка антивирусного ПО </br>
+				блокировка рекламы </br>
+			</p>
+        </div>
+    </div>
+		<div class="accordion-section">
+        <a class="accordion-section-title" href="#accordion-7">
+		<div class="price">от 15  руб</div>
+		Прокладка сети
+		</a>
+        <div id="accordion-7" class="accordion-section-content">
+            <p>Прокладка сети по дому и офисам</p>
+        </div>
+    </div>
+</div>
+
+						
+						
+			
+
+        </div>
+    
+    <div id="footer">
+	
+	
+	 &copy;2017 All Rights Reserved &nbsp;&nbsp;&nbsp; <span class='email'>E-mail:<a id="email" href="mailto:Pochta@mail">Pochta@mail.ru</a></span>
+    </div>
+			</div>
+			
+	</body>
+</html>
